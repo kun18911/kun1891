@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+ 
+</head>
+<body>
+
+    <div class="app"> 
+        
+
+            <!--<bảng show điểm -->
+                <div class="gameScreen2 app2"> </div>
+        <div class="gameScreen">
+            
+            <div class="nonee commonPointKey boardPointAll">
+                <div class="hpBoard far20pxBoard widthBoardPoint inline">0 </div>
+                <div class="starBoard far20pxBoard widthBoardPoint inline">0 </div> 
+                <div class="melonBoard widthBoardPoint inline">0 </div> 
+                <div class="swordBoard widthBoardPoint inline">0 </div> 
+                <div class="yingyangBoard widthBoardPoint inline">0 </div> 
+                <div class="manaBoard widthBoardPoint inline">0 </div> 
+                
+            </div>
+
+            <div class=" nonee boardPointMe pointBoardMe">
+                <div class="hpPointMe">Máu: <span class="hpPointMe1">500</span>/<span class="hpPointMe2">1000</span></div>
+                <div class="manaPointMe">Mana: <span class="manaPointMe1">0</span>/<span class="manaPointMe2">1000</span></div>
+                <div class="shieldPointMe">Giáp: <span  class="bsGiapDiemMe1">0</span> </div>
+                <div class="lvMe">Cấp: <span class="lvMe1">1</span>/<span class="lvMe2">+ 02%</span></div>
+                <div class="changeMe">Biến hình: <span class="changeMe1">0</span>/<span class="changeMe2">1000</span></div>
+            </div>
+            <div class=" nonee boardPointMe pointBoardEnemy">
+                <div class="hpPointEnemy">Máu: <span class="hpPointEnemy1">500</span>/<span class="hpPointEnemy2">1000</span></div>
+                <div class="manaPointEnemy">Mana: <span class="manaPointEnemy1">0</span>/<span class="manaPointEnemy2">1000</span></div>
+                <div class="shieldPointEnemy">Giáp: <span  class="bsGiapDiemEnemy1">0</span> </div>
+                <div class="lvEnemy">Cấp: <span class="lvEnemy1">1</span>/<span class="lvEnemy2">+ 02%</span></div>
+                <div class="changeEnemy">Biến hình: <span class="changeEnemy1">500</span>/<span class="changeEnemy2">1000</span></div>
+            </div>
+
+
+            <!-- bảng thời gian  -->
+            <div class="timeee nonee timeMe">20s</div>
+            <div class="timeee nonee timeEnemy">20s</div>
+
+
+
+
+            <!-- Nút thoát trận và nút kĩ năng-->
+            <div class="timee nonee outGame">Đầu Hàng</div>
+            <div class="timee nonee outGame skillButton">Kĩ Năng</div>
+
+            <div class="timee nonee giveUp">
+                
+                <div class="timee giveUp1">Bạn vẫn muốn đầu hàng chứ?</div>
+                <div class="timee giveUp2">Có</div>
+                <div class="timee giveUp3">Không</div>
+               
+            </div>
+            <div class="layoutBlack"></div>
+
+
+            
+          <!-- Nhân vật và quái vật -->
+      <div class="char meChar">
+        <div class="char meChara"></div>
+    </div>
+    <div class="char monsterChar1">
+        <div class="char monsterChar1a"></div>
+    </div>
+    <div class="char monsterChar2">
+        <div class="char monsterChar2a"></div>
+    </div>
+    <div class="char monsterChar3">
+        <div class="char monsterChar3a"></div>
+    </div>
+
+
+
+
+     <!-- bảng thông tin nhân vật -->
+     <div class="item inforBoard">
+        <div class="item white nameMe">Khoa_Phạm</div>
+        <div class="item white lvv LvMe">Cấp: 1</div>
+        <div class="item white lvv docMe">+ 00.00%</div>
+        <div class="item white goldMe">Vàng: 0</div>
+
+
+     </div>
+
+      <!-- Bàn cờ -->
+      <h1>Score: <span id="score">0</span></h1>
+      <div class= "nonee bodyy"id="board">
+    </div>
+
+
+        <!-- login -->
+         
+       
+            <div class="item form">
+               <div class="item lg">Đăng Nhập</div>
+               <div class="item login">Tên TK: <input type="text" class="tk"> </div>
+               <div class="item matkhau">Mật khẩu: <input type="password" class=" mk"> </div>
+               <div class="item id">Nhập id: <input type="text" class=" idtk"> </div>
+               <div class="item htro nonee">Gặp admin để được hỗ trợ!</div>
+            </div>
+        
+
+
+          <!-- Bình mana mình và quái -->
+          <div class="item hpitem nonee">HP(10)</div>
+          <div class="item manaitem nonee">MANA(10)</div>
+         
+          
+          <!-- <div class="item hpitemth">HP</div>
+          <div class="item manaitemth">MANA</div> -->
+
+<!-- end -->
+</div>
+
+<div class="playScreen">
+    <!-- bàn phím -->
+   <div class="keyBoard">
+       <div class="upKey commonPointKey">LÊ</div>
+       <div class="downKey commonPointKey">XUỐNG</div>
+       <div class="leftKey commonPointKey">TRÁI</div>
+       <div class="rightKey commonPointKey">PHẢI</div>
+       <div class="okKey commonPointKey">OK</div>
+   </div>
+</div>
+
+
+        <!-- end -->
+    </div>
+       
+    
+</body>
+<script src="asset/javascript/Me.js"></script>
+<script src="asset/javascript/u.js"></script>
+
+</html>

@@ -1,8 +1,9 @@
 
 // impo?
-
+//map
+var map1 = 'url("https://scontent.xx.fbcdn.net/v/t1.15752-9/413277042_1022871112139469_373413145584351557_n.png?stp=dst-png_s206x206&_nc_cat=110&ccb=1-7&_nc_sid=510075&_nc_ohc=QVCx5iVS7yMAX-VhXXq&_nc_oc=AQkne2E3u8u16PTnDOo_bok1ZVAVznpR3N9mwVUzEUHKGtatafXi2qi7l5zZ88UrQ0hOCBPfkP57U_A-clNrKLFF&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSXe8U11-fQ3KMxQ8U1LWWydWqm5MMrA5mwnuArRS1Ebg&oe=65D4A5EA")'
 // Nhân vật của tôi
-var world1 = 'url("https://scontent.xx.fbcdn.net/v/t1.15752-9/415913777_273679065474638_3261942019706869611_n.png?stp=dst-png_p75x225&_nc_cat=104&ccb=1-7&_nc_sid=510075&_nc_ohc=_EWFeH3ZJjYAX-p5Fk_&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTpNIvkhqH-etvLnzJNwr0npw294-HSGFuofWW3hq1wZg&oe=65D20199")'
+var world1 = 'url("https://scontent.xx.fbcdn.net/v/t1.15752-9/416137435_919536276429290_2056426126391081955_n.png?stp=dst-png_p206x206&_nc_cat=100&ccb=1-7&_nc_sid=510075&_nc_ohc=tBbNhB2hihkAX8LQkTr&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTLQAslMb8Gq-zl9Adu0jjB0GZpFcLYHc3pxR1RYwRESw&oe=65D49797")'
 var Me = 'url("https://scontent.xx.fbcdn.net/v/t1.15752-9/415736587_754339319384647_5030219501129618554_n.png?stp=dst-png_p206x206&_nc_cat=109&ccb=1-7&_nc_sid=510075&_nc_ohc=WJu21BRnI7kAX-RBUHg&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQNZKXPLNIu2lKT3HKUwugxX75M52ndpKQnQQcbj8bhhA&oe=65CECDAB")'
 var Enemy1 = 'url("https://scontent.xx.fbcdn.net/v/t1.15752-9/415974450_1546745376101500_8861687559608820127_n.png?stp=dst-png_p206x206&_nc_cat=110&ccb=1-7&_nc_sid=510075&_nc_ohc=nVPtgZQjO_8AX9BC0mh&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdS820IvvU9jUo-9KJ9m2O4bo0QMgjuwRP28i51xK_Fqqg&oe=65CEF43C")'
 var Enemy2 = 'url("https://scontent.xx.fbcdn.net/v/t1.15752-9/415974450_1546745376101500_8861687559608820127_n.png?stp=dst-png_p206x206&_nc_cat=110&ccb=1-7&_nc_sid=510075&_nc_ohc=nVPtgZQjO_8AX9BC0mh&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdS820IvvU9jUo-9KJ9m2O4bo0QMgjuwRP28i51xK_Fqqg&oe=65CEF43C")'
@@ -34,9 +35,9 @@ var otherTile;
 
 // Gán hình ảnh cho các nhân vật
 meChar.style.backgroundImage = Me
-monster1.style.backgroundImage = Enemy1
-monster2.style.backgroundImage = Enemy2
-monster3.style.backgroundImage = Enemy3
+monster1.style.backgroundImage = world1
+monster2.style.backgroundImage = world1
+monster3.style.backgroundImage = world1
 
 
 // 1. khi click quái, hiển thị bàn cờ
@@ -159,6 +160,21 @@ function randomCandy() {
 }
 
 
+function baby() {
+    startGame();
+    
+    
+    //1/10th of a second
+    // window.setTimeout(function(){
+    
+    //     crushCandy();
+    
+       
+    //     // generateCandy();
+    // }, 300);
+    
+}
+
 // 3. khi ấn đầu hàng:
 document.querySelector(".outGame").addEventListener("click", function() {
     document.querySelector(".layoutBlack").classList.remove("nonee")
@@ -194,3 +210,7 @@ function mimiGiveUp2() {
     document.querySelector(".bodyy").classList.add("nonee")
 }
 
+// làm bản đồ
+document.querySelector(".gameScreen2").style.backgroundImage = map1
+document.querySelector(".gameScreen2").classList.add("map1size")
+document.querySelector(".gameScreen2").style.backgroundPosition = "-0px 0px"

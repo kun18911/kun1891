@@ -1,10 +1,9 @@
-function crushCandy() {
-    crushThree();
-    // document.getElementById("score").innerText = score;
+// function crushCandy() {
+//     crushThree();
+//     // document.getElementById("score").innerText = score;
  
 
-}
-
+// }
 
 var swordPoint = 0
 
@@ -15,7 +14,7 @@ var yingyangPoint = 0
 var starPoint = 0
 var heartPoint = 0
 var waterPoint = 0
-var dtt = 0
+// var dtt = 0
 function crushThree() {
     //check rows
     
@@ -68,7 +67,7 @@ function crushThree() {
                 candy5.src = blank;
                 candy6.src = blank;
                 candy7.src = blank;
-                },30)
+                },400)
             }
         }
         for (let c = 0; c < columns-5; c++) {
@@ -118,7 +117,7 @@ function crushThree() {
                     candy5.src = blank;
                     candy6.src = blank;
               
-                    },30)
+                    },400)
              
             }
         }
@@ -167,7 +166,7 @@ function crushThree() {
                     candy4.src = blank;
                     candy5.src = blank;
                  
-                    },30)
+                    },400)
                
             }
         }
@@ -214,7 +213,7 @@ function crushThree() {
                     candy3.src = blank;
                     candy4.src = blank;
                    
-                    },30)
+                    },400)
               
             }
         }
@@ -259,7 +258,7 @@ function crushThree() {
                     candy2.src = blank;
                     candy3.src = blank;
                   
-                    },30)
+                    },400)
                 
             }
         }
@@ -319,7 +318,7 @@ function crushThree() {
                     candy7.src = blank;
                     candy8.src = blank;
                     candy9.src = blank;
-                    },30)
+                    },400)
            
             }
         }
@@ -376,7 +375,7 @@ function crushThree() {
                     candy7.src = blank;
                     candy8.src = blank;
                  
-                    },30)
+                    },400)
               
             }
         }
@@ -432,7 +431,7 @@ function crushThree() {
                     candy7.src = blank;
                  
                  
-                    },30)
+                    },400)
           
                
              
@@ -489,7 +488,7 @@ function crushThree() {
                     candy6.src = blank;
                 
                  
-                    },30)
+                    },400)
              
                
                
@@ -546,7 +545,7 @@ function crushThree() {
                 
                 
                  
-                    },30)
+                    },400)
            
              
                
@@ -601,7 +600,7 @@ function crushThree() {
                    
                 
                  
-                    },30)
+                    },400)
          
            
              
@@ -651,7 +650,7 @@ function crushThree() {
                  
                 
                  
-                    },30)
+                    },400)
              
             }
         }
@@ -671,87 +670,112 @@ function crushThree() {
             
                 if (n == 0) {
                 
-                    if (dtt == 1) {
-                        var bo= 0
-                    } else {
-                        dtt = true
-                        console.log(dtt)
-                        abce = true
-                        timm = false
-                        time()
-                    }
+                    // if (dtt == 1) {
+                    //     var bo= 0
+                    // } else {
+                    //     dtt = true
+                    //     console.log(dtt)
+                    //     abce = true
+                    //     timm = false
+                    //     time()
+                    // }
                     
-                    document.querySelector(".hpBoard").innerHTML = heartPoint
-                    setTimeout(function() { document.querySelector(".hpBoard").innerHTML = 0},2000)
+                    // document.querySelector(".hpBoard").innerHTML = heartPoint
+                    // setTimeout(function() { document.querySelector(".hpBoard").innerHTML = 0},2000)
             
-                    document.querySelector(".starBoard").innerHTML = starPoint
-                    setTimeout(function() {document.querySelector(".starBoard").innerHTML = 0},2000)
-                    document.querySelector(".melonBoard").innerHTML = melonPoint
-                    setTimeout(function() {document.querySelector(".melonBoard").innerHTML = 0},2000)
+                    // document.querySelector(".starBoard").innerHTML = starPoint
+                    // setTimeout(function() {document.querySelector(".starBoard").innerHTML = 0},2000)
+                    // document.querySelector(".melonBoard").innerHTML = melonPoint
+                    // setTimeout(function() {document.querySelector(".melonBoard").innerHTML = 0},2000)
                     
-                    document.querySelector(".swordBoard").innerHTML = swordPoint  
-                    setTimeout(function() {document.querySelector(".swordBoard").innerHTML = 0},2000)   
+                    // document.querySelector(".swordBoard").innerHTML = swordPoint  
+                    // setTimeout(function() {document.querySelector(".swordBoard").innerHTML = 0},2000)   
             
-                    document.querySelector(".yingyangBoard").innerHTML = yingyangPoint
-                    setTimeout(function() {document.querySelector(".yingyangBoard").innerHTML = 0},2000)
+                    // document.querySelector(".yingyangBoard").innerHTML = yingyangPoint
+                    // setTimeout(function() {document.querySelector(".yingyangBoard").innerHTML = 0},2000)
             
-                    document.querySelector(".manaBoard").innerHTML = waterPoint
-                    setTimeout(function() {document.querySelector(".manaBoard").innerHTML = 0},2000)
+                    // document.querySelector(".manaBoard").innerHTML = waterPoint
+                    // setTimeout(function() {document.querySelector(".manaBoard").innerHTML = 0},2000)
 
 
-                    wee()
-                //    swordPoint = 0
-
-                //    melonPoint = 0
-                
-                //    yingyangPoint = 0
-                
-                //    starPoint = 0
-                //    heartPoint = 0
-                //    waterPoint = 0
+                    // wee()
+         
                 } else {slideCandyy()}}
     
-        },150)
+        },800)
    
 
 
 }
-var timm = false
-function wee() {
-    var a = Number(document.querySelector(".hpPointMe1").innerHTML.slice(0))
-    document.querySelector(".hpPointMe1").innerHTML = a + heartPoint
+// var timm = false
+// function wee() {
+//     var a = Number(document.querySelector(".hpPointMe1").innerHTML.slice(0))
+//     document.querySelector(".hpPointMe1").innerHTML = a + heartPoint
 
-    var a = Number(document.querySelector(".hpPointEnemy1").innerHTML.slice(0))
-    var nu = a- swordPoint
-    if (nu <= 0) {nu = 0}
-    document.querySelector(".hpPointEnemy1").innerHTML = nu
-    if (nu == 0) {setTimeout(function() {mimiGiveUp2();
-        timm = true
-        document.querySelector(".timeMe").classList.add("nonee")
-        document.querySelector(".timeEnemy").classList.add("nonee")
-    },3000)}
-
-
-    var a = Number(document.querySelector(".manaPointMe1").innerHTML.slice(0))
-    document.querySelector(".manaPointMe1").innerHTML = a + waterPoint
-
-    var a = Number(document.querySelector(".bsGiapDiemMe1").innerHTML.slice(0))
-    document.querySelector(".bsGiapDiemMe1").innerHTML = a + yingyangPoint
-
-    var a = Number(document.querySelector(".changeMe1").innerHTML.slice(0))
-    document.querySelector(".changeMe1").innerHTML = a + starPoint 
+//     var a = Number(document.querySelector(".hpPointEnemy1").innerHTML.slice(0))
+//     var nu = a- swordPoint
+//     if (nu <= 0) {nu = 0}
+//     document.querySelector(".hpPointEnemy1").innerHTML = nu
+//     if (nu == 0) {setTimeout(function() {mimiGiveUp2();
+//         timm = true
+//         document.querySelector(".timeMe").classList.add("nonee")
+//         document.querySelector(".timeEnemy").classList.add("nonee")
+//     },40000)}
 
 
+//     var a = Number(document.querySelector(".manaPointMe1").innerHTML.slice(0))
+//     document.querySelector(".manaPointMe1").innerHTML = a + waterPoint
+
+//     var a = Number(document.querySelector(".bsGiapDiemMe1").innerHTML.slice(0))
+//     document.querySelector(".bsGiapDiemMe1").innerHTML = a + yingyangPoint
+
+//     var a = Number(document.querySelector(".changeMe1").innerHTML.slice(0))
+//     document.querySelector(".changeMe1").innerHTML = a + starPoint 
 
 
-    swordPoint = 0
-    heartPoint = 0
-    waterPoint = 0
-    yingyangPoint = 0
-    melonPoint = 0
-    starPoint = 0
 
-}
+
+//     swordPoint = 0
+//     heartPoint = 0
+//     waterPoint = 0
+//     yingyangPoint = 0
+//     melonPoint = 0
+//     starPoint = 0
+
+// }
+
+// function slideCandyy(){
+
+
+// for (let r = 0; r < rows; r++) {
+
+//     for (let c = 0; c < columns; c++) {
+        
+//         if (board[0][c].src.includes(blank)) {board[0][c].src = randomCandy()}
+//         if (board[r][c].src.includes(blank)) {
+//             board[r][c].src = board[r-1][c].src
+//             board[r-1][c].src = blank
+//         }
+//     }}
+        
+//     setTimeout(function (){
+    
+//         var n = 0
+//         for (let r = 0; r < rows; r++) {
+    
+//             for (let c = 0; c < columns; c++) {
+//                 if (board[r][c].src.includes(blank)) {
+//                     n += 1
+//                 }
+//             }
+        
+//             if (n == 0) {
+//                 crushThree()
+//             } else {slideCandyy()}
+//         }
+//     },150)
+                
+// }
 
 function slideCandyy(){
 
@@ -759,8 +783,8 @@ function slideCandyy(){
 for (let r = 0; r < rows; r++) {
 
     for (let c = 0; c < columns; c++) {
-        
         if (board[0][c].src.includes(blank)) {board[0][c].src = randomCandy()}
+   
         if (board[r][c].src.includes(blank)) {
             board[r][c].src = board[r-1][c].src
             board[r-1][c].src = blank
@@ -779,24 +803,12 @@ for (let r = 0; r < rows; r++) {
             }
         
             if (n == 0) {
-                crushCandy()
+                crushThree()
             } else {slideCandyy()}
         }
-    },150)
+    },400)
                 
 }
-
-
-
-        
-        // function generateCandy() {
-        //     for (let c = 0; c < columns;  c++) {
-        //         if (board[0][c].src.includes(blank)) {
-        //             board[0][c].src = randomCandy()
-        //         }
-        //     }
-        // }
-
 
 
 //cho nhân vật di chuyển
@@ -824,16 +836,35 @@ if (goo1 == true) {
     goo1 = false
     console.log("hi1")
     
-    var charBottom = Number(char.style.bottom.slice(0,-2))
+    var charbottom = Number(char.style.bottom.slice(0,-2))
     console.log("hi2")
     idf = setInterval(function() {
         var idff = true
         if (goo1 == false) {
-            if (charBottom <= 1360) {
-                charBottom += 20
-                if (charBottom >= 1360) {charBottom = 1360}
-                char.style.bottom = charBottom + 'px'
-                console.log("hi3")
+            if (charbottom <= 1320) {
+                if (charbottom < 1020) {charbottom += 20
+                    char.style.bottom = charbottom + 'px'
+                    console.log("hi3")}
+                else if (charbottom >= 1020) {
+                    var tff = 
+                    document.querySelector(".gameScreen2").style.backgroundPosition.split(" ")
+                    var e = Number(tff[1].slice(0,-2))
+                    if (e <= 0 && e >= -2380 ) {
+                    e += 20
+                    if (e >= 20) { e = 0}
+                    document.querySelector(".gameScreen2").style.backgroundPosition = 
+                    tff[0] +" "+ e + "px"} 
+                    if (e  >= 0 && charbottom >= 1020 && charbottom <= 1320) {
+                        charbottom += 20
+              
+                    if (charbottom >= 1320)  {charbottom = 1320
+                    
+                    }
+                    char.style.bottom = charbottom + 'px'
+                    }
+
+
+                }   
 
                 up.addEventListener("click", g1)
                 function g1() {
@@ -870,15 +901,37 @@ goo4 = true
     goo2 = false
     console.log("hi3")
     
-    var charBottom = Number(char.style.bottom.slice(0,-2))
+    var charbottom = Number(char.style.bottom.slice(0,-2))
     console.log("hi4")
     idf2  = setInterval(function() {
         if (goo2 == false) {
-            if (charBottom >0) {
-                charBottom -= 20
-                if (charBottom <= 0)  {charBottom = 0}
-                char.style.bottom = charBottom + 'px'
-                console.log("hi3")
+            
+            if (charbottom >0) {
+
+
+                if (charbottom > 200) {charbottom -= 20
+                    char.style.bottom = charbottom + 'px'
+                    console.log("hi3")}
+                else if (charbottom <= 200) {
+                    var tff = 
+                    document.querySelector(".gameScreen2").style.backgroundPosition.split(" ")
+                    var e = Number(tff[1].slice(0,-2))
+                    if (e <= 0 && e >= -2380 ) {
+                    e -= 20
+                    if (e <= -2380) { e = -2380}
+                    document.querySelector(".gameScreen2").style.backgroundPosition = 
+                    tff[0] +" "+ e + "px"} 
+                    if (e  <= -2380 && charbottom <= 200 && charbottom >= 0) {
+                        charbottom -= 20
+              
+                    if (charbottom <= 0)  {charbottom = 0
+                    
+                    }
+                    char.style.bottom = charbottom + 'px'
+                    }
+
+
+                }   
 
                 down.addEventListener("click", g1)
                 function g1() {
@@ -922,11 +975,33 @@ goo4 = true
     console.log("hi4")
     idf3  = setInterval(function() {
         if (goo3 == false) {
+
+            
+
             if (charleft < 880) {
-                charleft -= 20
-                if (charleft <= 0)  {charleft = 0}
-                char.style.left = charleft + 'px'
-                console.log("hi3")
+                if (charleft > 240) {charleft -= 20
+                    char.style.left = charleft + 'px'
+                    console.log("hi3")}
+                else if (charleft <= 240) {
+                    var tff = 
+                    document.querySelector(".gameScreen2").style.backgroundPosition.split(" ")
+                    var e = Number(tff[0].slice(0,-2))
+                    if (e <= 0 && e >= -1960 ) {
+                    e += 20
+                    if (e >= 0) { e = 0}
+                    document.querySelector(".gameScreen2").style.backgroundPosition = 
+                    e + "px " + tff[1]} 
+                if (e  >= 0 && charleft <= 240 && charleft >= 0) {
+                        charleft -= 20
+              
+                    if (charleft <= 0)  {charleft = 0
+                    
+                    }
+                    char.style.left = charleft + 'px'
+                    }
+
+
+                } 
 
                 left.addEventListener("click", g1)
                 function g1() {
@@ -969,11 +1044,34 @@ goo2 = true
     console.log("hi4")
     idf4  = setInterval(function() {
         if (goo4 == false) {
-            if (charleft > 0) {
-                charleft += 20
-                if (charleft >= 880)  {charleft = 880}
-                char.style.left = charleft + 'px'
-                console.log("hi3")
+            if (charleft >= 0) {
+               
+                if (charleft < 520) {charleft += 20
+                    char.style.left = charleft + 'px'
+                    console.log("hi3")}
+                else if (charleft >= 520) {
+                    var tff = 
+                    document.querySelector(".gameScreen2").style.backgroundPosition.split(" ")
+                    var e = Number(tff[0].slice(0,-2))
+                    if (e <= 0 && e >= -1960 ) {
+                    e -= 20
+                    if (e <= -1960) { e = -1960}
+                    document.querySelector(".gameScreen2").style.backgroundPosition = 
+                    e + "px " + tff[1]} 
+                if (e  <= -1960 && charleft >= 520 && charleft <= 820) {
+                        charleft += 20
+              
+                    if (charleft >= 820)  {charleft = 820
+                    
+                    }
+                    char.style.left = charleft + 'px'
+                    }
+
+
+                } 
+
+              
+             
 
                 right.addEventListener("click", g1)
                 function g1() {
@@ -1003,7 +1101,7 @@ var abd = 0
 var amc = true
 var b = 0
 function clickabc() {
-if (abce == true) {
+// if (abce == true) {
 console.log("haha")
 if (abc == true) {
     abc = false
@@ -1017,7 +1115,7 @@ if (abc == true) {
     
 }}
 
-}
+
 
 function clickabd() {
 if (amc == false ) {
@@ -1072,28 +1170,14 @@ if (isAdjacent) {
         currTile.src = otherImg;
         otherTile.src = currImg;   
         abce = true 
-       },300)
+       },400)
     }
 }
-crushCandy()
+crushThree()
 }
 
 
 
-
-function baby() {
-startGame();
-
-
-//1/10th of a second
-window.setTimeout(function(){
-
-    crushCandy();
-
-   
-    // generateCandy();
-}, 300);
-}
 function checkValid() {
 //check rows
 for (let r = 0; r < rows; r++) {
@@ -1121,57 +1205,57 @@ for (let c = 0; c < columns; c++) {
 
 return false;
 }
-var timee = 9
-var nt = true
-function time() {
-if (timm == false) {
-dtt = 1
+// var timee = 9
+// var nt = true
+// function time() {
+// if (timm == false) {
+// dtt = 1
 
-document.querySelector(".timeMe").classList.remove("nonee")
-document.querySelector(".timeMe").innerHTML = timee + "s"
- setTimeout(function(){
-    if ( nt == true) {
-        document.querySelector(".timeMe").innerHTML = (timee--)+ "s"
-        if (timee == -1) {
-            document.querySelector(".timeMe").classList.add("nonee")
+// document.querySelector(".timeMe").classList.remove("nonee")
+// document.querySelector(".timeMe").innerHTML = timee + "s"
+//  setTimeout(function(){
+//     if ( nt == true) {
+//         document.querySelector(".timeMe").innerHTML = (timee--)+ "s"
+//         if (timee == -1) {
+//             document.querySelector(".timeMe").classList.add("nonee")
 
-               nt = false
-                timee = 2
-    abce = false
+//                nt = false
+//                 timee = 2
+//     abce = false
 
-                time2()
+//                 time2()
         
-        } else { time()}
+//         } else { time()}
 
-    }
+//     }
    
    
-},1000)}
-}
+// },1000)}
+// }
 
-function time2() {
-if (timm == false) {
+// function time2() {
+// if (timm == false) {
 
-document.querySelector(".timeEnemy").classList.remove("nonee")
-document.querySelector(".timeEnemy").innerHTML = timee + "s"
- setTimeout(function(){
-    if ( nt == false) {
-        document.querySelector(".timeEnemy").innerHTML = (timee--)+ "s"
-        if (timee == -1) {
+// document.querySelector(".timeEnemy").classList.remove("nonee")
+// document.querySelector(".timeEnemy").innerHTML = timee + "s"
+//  setTimeout(function(){
+//     if ( nt == false) {
+//         document.querySelector(".timeEnemy").innerHTML = (timee--)+ "s"
+//         if (timee == -1) {
             
-            document.querySelector(".timeEnemy").classList.add("nonee")
+//             document.querySelector(".timeEnemy").classList.add("nonee")
 
-               nt = true
-                timee = 9
-                abce = true
-                time()
+//                nt = true
+//                 timee = 9
+//                 abce = true
+//                 time()
         
-        } else { time2()}
+//         } else { time2()}
        
 
-    }
-},1000)}
-}
+//     }
+// },1000)}
+// }
 
 // document.querySelector(".gameScreen2").style.backgroundImage = world1
 // document.querySelector(".gameScreen2").classList.add("world1")
@@ -1179,32 +1263,32 @@ document.querySelector(".timeEnemy").innerHTML = timee + "s"
 
 
 // đăng nhập
-document.querySelector(".lg").addEventListener("click", function() {
-    if(document.querySelector(".idtk").value.indexOf("cvg") != -1) {
-        document.querySelector(".form").classList.add("nonee")
-        document.querySelector(".lg").classList.add("nonee")
-        document.querySelector(".login").classList.add("nonee")
-        document.querySelector(".tk").classList.add("nonee")
-        document.querySelector(".matkhau").classList.add("nonee")
-        document.querySelector(".mk").classList.add("nonee")
-        document.querySelector(".id").classList.add("nonee")
-        document.querySelector(".idtk").classList.add("nonee")
-        document.querySelector(".layoutBlack").classList.add("nonee")
+// document.querySelector(".lg").addEventListener("click", function() {
+//     if(document.querySelector(".idtk").value.indexOf("cvg") != -1) {
+//         document.querySelector(".form").classList.add("nonee")
+//         document.querySelector(".lg").classList.add("nonee")
+//         document.querySelector(".login").classList.add("nonee")
+//         document.querySelector(".tk").classList.add("nonee")
+//         document.querySelector(".matkhau").classList.add("nonee")
+//         document.querySelector(".mk").classList.add("nonee")
+//         document.querySelector(".id").classList.add("nonee")
+//         document.querySelector(".idtk").classList.add("nonee")
+//         document.querySelector(".layoutBlack").classList.add("nonee")
         
       
         
 
-        // savetd()
-        // document.querySelector(".nameMe").innerHTML = td[1]
-        // document.querySelector(".LvMe").innerHTML = "Cấp: " + td[2]
-        // document.querySelector(".docMe").innerHTML = "+ " + td[3] +"%"
-        // document.querySelector(".goldMe").innerHTML = "Vàng: " + td[4] 
+//         // savetd()
+//         // document.querySelector(".nameMe").innerHTML = td[1]
+//         // document.querySelector(".LvMe").innerHTML = "Cấp: " + td[2]
+//         // document.querySelector(".docMe").innerHTML = "+ " + td[3] +"%"
+//         // document.querySelector(".goldMe").innerHTML = "Vàng: " + td[4] 
       
         
-    } else {
-        setTimeout(function() {
-            document.querySelector(".htro").classList.add("nonee")
-        }, 2000)
-        document.querySelector(".htro").classList.remove("nonee")
-    }
-})
+//     } else {
+//         setTimeout(function() {
+//             document.querySelector(".htro").classList.add("nonee")
+//         }, 2000)
+//         document.querySelector(".htro").classList.remove("nonee")
+//     }
+// })

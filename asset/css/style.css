@@ -12,7 +12,8 @@
 }
 
 #board {
-    width: 821px;
+    /* width: 821px; */
+    width: 833px;
     height: 986px;
     background-color: lightblue;
     border: 5px solid slategray;
@@ -66,7 +67,7 @@
     border: 1px solid #000;
 }
 
-/* .gameScreen2 {
+.gameScreen2 {
    
     width: 3000px;
     height: 4000px;
@@ -76,7 +77,7 @@
    
   
     border: 1px solid #000;
-} */
+}
 .playScreen {
     width: 1040px;
     height: 288px;
@@ -458,28 +459,28 @@
     box-sizing: border-box;}
 
     .monsterChar1a {
-        background-size: 315px;
+        background-size: 300px;
         width: 300px;
         height: 300px;
         position: absolute;
-        background-position: -59px -23px;
+        background-position: -51px -1px;
         background-repeat: no-repeat;
         }
         .monsterChar2a {
-            background-size: 315px;
+            background-size: 300px;
             width: 300px;
             height: 300px;
             position: absolute;
-            background-position: -59px -23px;
+            background-position: -51px -1px;
             background-repeat: no-repeat;
             }
 
             .monsterChar3a {
-                background-size: 315px;
+                background-size: 300px;
                 width: 300px;
                 height: 300px;
                 position: absolute;
-                background-position: -59px -23px;
+                background-position: -51px -1px;
                 background-repeat: no-repeat;
                 }
 
@@ -798,4 +799,8 @@
     font-weight: bold;
     
 
+}
+.map1size {
+    background-size: 3000px;
+    background-repeat: no-repeat;
 }

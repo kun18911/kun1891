@@ -14,6 +14,7 @@ var monster2 = document.querySelector(".monsterChar2a")
 var monster3 = document.querySelector(".monsterChar3a")
 var meChar = document.querySelector(".meChara")
 
+var sword1 = 'https://scontent.xx.fbcdn.net/v/t1.15752-9/416029877_363793416407930_2323911269152227459_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=510075&_nc_eui2=AeFQ9B_SaQKfKvYdP3mZhDfao5cYX6fIvw-jlxhfp8i_D4ZUYJ-vJ30zJN70ya6mSr-XmI53IzaUsqzLeyhfuvxG&_nc_ohc=bbl1Ee31atQAX8uWc2S&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRf7ivoELs1p3_7noNTjp3eU1UP09lDvfDgkLKYh6kb0Q&oe=65D8AE8D'
 
 //Biến của quân cờ
 var star = 'https://scontent.xx.fbcdn.net/v/t1.15752-9/414016480_372189065393833_3133061746980291271_n.png?_nc_cat=100&ccb=1-7&_nc_sid=510075&_nc_eui2=AeGglFvHduDVfp5Bv3b3kFvUyJFhlYdpZ0rIkWGVh2lnSulX-dSPzxxFdSOMNLTfyoWm_ixIMMt6XHkEOUdDBY-2&_nc_ohc=9iHuKK_GswoAX9l7Bmz&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdS4616XiF6dgmCk9vJEwlJWBc6EVGKu-JphjTkqCau-7Q&oe=65C3B721'

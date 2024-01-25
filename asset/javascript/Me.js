@@ -153,6 +153,10 @@ function startGame() {
     console.log(board);
 
     
+    board[0][0].src = sword
+board[0][3].src = sword
+board[0][2].src = sword
+board[1][1].src = sword
 }
 
 function randomCandy() {

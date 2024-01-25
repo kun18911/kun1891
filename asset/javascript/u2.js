@@ -14,254 +14,227 @@ var yingyangPoint = 0
 var starPoint = 0
 var heartPoint = 0
 var waterPoint = 0
+
 // var dtt = 0
 function crushThree() {
     //check rows
     
     for (let r = 0; r < rows; r++) {
-        for (let c = 0; c < columns-6; c++) {
-            let candy1 = board[r][c];
-            let candy2 = board[r][c+1];
-            let candy3 = board[r][c+2];
-            let candy4 = board[r][c+3];
-            let candy5 = board[r][c+4];
-            let candy6 = board[r][c+5];
-            let candy7 = board[r][c+6];
-            if (candy1.src == candy2.src && candy2.src == candy3.src && candy3.src == candy4.src && candy4.src == candy5.src && candy5.src == candy6.src && candy6.src == candy7.src && !candy1.src.includes(blank)) {
-                switch(candy1.src) {
-                    case sword: {
-                        swordPoint += 70
-                        console.log(swordPoint)
-                        break;
-                    }
+        // for (let c = 0; c < columns-6; c++) {
+        //     let candy1 = board[r][c];
+        //     let candy2 = board[r][c+1];
+        //     let candy3 = board[r][c+2];
+        //     let candy4 = board[r][c+3];
+        //     let candy5 = board[r][c+4];
+        //     let candy6 = board[r][c+5];
+        //     let candy7 = board[r][c+6];
+        //     if (candy1.src == candy2.src && candy2.src == candy3.src && candy3.src == candy4.src && candy4.src == candy5.src && candy5.src == candy6.src && candy6.src == candy7.src && !candy1.src.includes(blank)) {
+        //         // switch(candy1.src) {
+        //         //     case sword: {
+        //         //         swordPoint += 70
+        //         //         console.log(swordPoint)
+        //         //         break;
+        //         //     }
 
-                    case melon: {
-                        melonPoint += 70
-                        break;
-                    }
+        //         //     case melon: {
+        //         //         melonPoint += 70
+        //         //         break;
+        //         //     }
 
-                    case yingyang: {
-                        yingyangPoint += 70
-                        break;
-                    }
+        //         //     case yingyang: {
+        //         //         yingyangPoint += 70
+        //         //         break;
+        //         //     }
 
-                    case star: {
-                        starPoint += 70
-                        break;
-                    }
-                    case heart: {
-                        heartPoint += 70
-                        break;
-                    }
-                    case water: {
-                        waterPoint += 70
-                        break;
-                    }
+        //         //     case star: {
+        //         //         starPoint += 70
+        //         //         break;
+        //         //     }
+        //         //     case heart: {
+        //         //         heartPoint += 70
+        //         //         break;
+        //         //     }
+        //         //     case water: {
+        //         //         waterPoint += 70
+        //         //         break;
+        //         //     }
 
-                }
-                setTimeout(function() {
-                candy1.src = blank;
-                candy2.src = blank;
-                candy3.src = blank;
-                candy4.src = blank;
-                candy5.src = blank;
-                candy6.src = blank;
-                candy7.src = blank;
-                },400)
-            }
-        }
-        for (let c = 0; c < columns-5; c++) {
-            let candy1 = board[r][c];
-            let candy2 = board[r][c+1];
-            let candy3 = board[r][c+2];
-            let candy4 = board[r][c+3];
-            let candy5 = board[r][c+4];
-            let candy6 = board[r][c+5];
-            if (candy1.src == candy2.src && candy2.src == candy3.src && candy3.src == candy4.src && candy4.src == candy5.src && candy5.src == candy6.src && !candy1.src.includes(blank)) {
-                switch(candy1.src) {
-                    case sword: {
-                        swordPoint += 60
-                        console.log(swordPoint)
-                        break;
-                    }
+        //         // }
+        //         setTimeout(function() {
+        //         candy1.src = blank;
+        //         candy2.src = blank;
+        //         candy3.src = blank;
+        //         candy4.src = blank;
+        //         candy5.src = blank;
+        //         candy6.src = blank;
+        //         candy7.src = blank;
 
-                    case melon: {
-                        melonPoint += 60
-                        break;
-                    }
+                
+        //         },400)
+        //     }
+        // }
+        // for (let c = 0; c < columns-5; c++) {
+        //     let candy1 = board[r][c];
+        //     let candy2 = board[r][c+1];
+        //     let candy3 = board[r][c+2];
+        //     let candy4 = board[r][c+3];
+        //     let candy5 = board[r][c+4];
+        //     let candy6 = board[r][c+5];
+        //     if (candy1.src == candy2.src && candy2.src == candy3.src && candy3.src == candy4.src && candy4.src == candy5.src && candy5.src == candy6.src && !candy1.src.includes(blank)) {
+        //         switch(candy1.src) {
+        //             case sword: {
+        //                 candy1.src = sword1
+        //                 break;
+        //             }
 
-                    case yingyang: {
-                        yingyangPoint += 60
-                        break;
-                    }
+                  
 
-                    case star: {
-                        starPoint += 60
-                        break;
-                    }
-                    case heart: {
-                        heartPoint += 60
-                        break;
-                    }
-                    case water: {
-                        waterPoint += 60
-                        break;
-                    }
-
-                }
-                setTimeout(function() {
-                    candy1.src = blank;
-                    candy2.src = blank;
-                    candy3.src = blank;
-                    candy4.src = blank;
-                    candy5.src = blank;
-                    candy6.src = blank;
+        //         }
+        //         setTimeout(function() {
+        //             candy1.src = blank;
+        //             candy2.src = blank;
+        //             candy3.src = blank;
+        //             candy4.src = blank;
+        //             candy5.src = blank;
+        //             candy6.src = blank;
               
-                    },400)
+        //             },400)
              
-            }
-        }
-        for (let c = 0; c < columns-4; c++) {
-            let candy1 = board[r][c];
-            let candy2 = board[r][c+1];
-            let candy3 = board[r][c+2];
-            let candy4 = board[r][c+3];
-            let candy5 = board[r][c+4];
-            if (candy1.src == candy2.src && candy2.src == candy3.src && candy3.src == candy4.src && candy4.src == candy5.src && !candy1.src.includes(blank)) {
-                switch(candy1.src) {
-                    case sword: {
-                        swordPoint += 50
-                        console.log(swordPoint)
-                        break;
-                    }
+        //     }
+        // }
+        // for (let c = 0; c < columns-4; c++) {
+        //     let candy1 = board[r][c];
+        //     let candy2 = board[r][c+1];
+        //     let candy3 = board[r][c+2];
+        //     let candy4 = board[r][c+3];
+        //     let candy5 = board[r][c+4];
+        //     if (candy1.src == candy2.src && candy2.src == candy3.src && candy3.src == candy4.src && candy4.src == candy5.src && !candy1.src.includes(blank)) {
+        //         switch(candy1.src) {
+        //             case sword: {
+        //                 swordPoint += 50
+        //                 console.log(swordPoint)
+        //                 break;
+        //             }
 
-                    case melon: {
-                        melonPoint += 50
-                        break;
-                    }
+        //             case melon: {
+        //                 melonPoint += 50
+        //                 break;
+        //             }
 
-                    case yingyang: {
-                        yingyangPoint += 50
-                        break;
-                    }
+        //             case yingyang: {
+        //                 yingyangPoint += 50
+        //                 break;
+        //             }
 
-                    case star: {
-                        starPoint += 50
-                        break;
-                    }
-                    case heart: {
-                        heartPoint += 50
-                        break;
-                    }
-                    case water: {
-                        waterPoint += 50
-                        break;
-                    }
+        //             case star: {
+        //                 starPoint += 50
+        //                 break;
+        //             }
+        //             case heart: {
+        //                 heartPoint += 50
+        //                 break;
+        //             }
+        //             case water: {
+        //                 waterPoint += 50
+        //                 break;
+        //             }
 
-                }
-                setTimeout(function() {
-                    candy1.src = blank;
-                    candy2.src = blank;
-                    candy3.src = blank;
-                    candy4.src = blank;
-                    candy5.src = blank;
+        //         }
+        //         setTimeout(function() {
+        //             candy1.src = blank;
+        //             candy2.src = blank;
+        //             candy3.src = blank;
+        //             candy4.src = blank;
+        //             candy5.src = blank;
                  
-                    },400)
+        //             },400)
                
-            }
-        }
+        //     }
+        // }
+
+
         for (let c = 0; c < columns-3; c++) {
             let candy1 = board[r][c];
             let candy2 = board[r][c+1];
             let candy3 = board[r][c+2];
             let candy4 = board[r][c+3];
             if (candy1.src == candy2.src && candy2.src == candy3.src && candy3.src == candy4.src && !candy1.src.includes(blank)) {
-                switch(candy1.src) {
-                    case sword: {
-                        swordPoint += 40
-                        console.log(swordPoint)
-                        break;
-                    }
-
-                    case melon: {
-                        melonPoint += 40
-                        break;
-                    }
-
-                    case yingyang: {
-                        yingyangPoint += 40
-                        break;
-                    }
-
-                    case star: {
-                        starPoint += 40
-                        break;
-                    }
-                    case heart: {
-                        heartPoint += 40
-                        break;
-                    }
-                    case water: {
-                        waterPoint += 40
-                        break;
-                    }
-
-                }
+               
                 setTimeout(function() {
-                    candy1.src = blank;
-                    candy2.src = blank;
+                   
+
+                    if (candy2.width == 117 || candy2.width == 116) {
+                        switch(candy2.src) {
+                        case sword: {
+                            candy2.src = sword1 
+                            
+                            break;
+                        }
+
+                        
+                  
+                    
+    
+                     
+    
+                    }
                     candy3.src = blank;
                     candy4.src = blank;
+                    candy1.src = blank;
+                    }
                    
                     },400)
               
             }
         }
-        for (let c = 0; c < columns-2; c++) {
-            let candy1 = board[r][c];
-            let candy2 = board[r][c+1];
-            let candy3 = board[r][c+2];
-            if (candy1.src == candy2.src && candy2.src == candy3.src && !candy1.src.includes(blank)) {
-                switch(candy1.src) {
-                    case sword: {
-                        swordPoint += 30
-                        console.log(swordPoint)
-                        break;
-                    }
 
-                    case melon: {
-                        melonPoint += 30
-                        break;
-                    }
 
-                    case yingyang: {
-                        yingyangPoint += 30
-                        break;
-                    }
+        
+        // for (let c = 0; c < columns-2; c++) {
+        //     let candy1 = board[r][c];
+        //     let candy2 = board[r][c+1];
+        //     let candy3 = board[r][c+2];
+        //     if (candy1.src == candy2.src && candy2.src == candy3.src && !candy1.src.includes(blank)) {
+        //         switch(candy1.src) {
+        //             case sword: {
+        //                 swordPoint += 30
+        //                 console.log(swordPoint)
+        //                 break;
+        //             }
 
-                    case star: {
-                        starPoint += 30
-                        break;
-                    }
-                    case heart: {
-                        heartPoint += 30
-                        break;
-                    }
-                    case water: {
-                        waterPoint += 30
-                        break;
-                    }
+        //             case melon: {
+        //                 melonPoint += 30
+        //                 break;
+        //             }
 
-                }
-                setTimeout(function() {
-                    candy1.src = blank;
-                    candy2.src = blank;
-                    candy3.src = blank;
+        //             case yingyang: {
+        //                 yingyangPoint += 30
+        //                 break;
+        //             }
+
+        //             case star: {
+        //                 starPoint += 30
+        //                 break;
+        //             }
+        //             case heart: {
+        //                 heartPoint += 30
+        //                 break;
+        //             }
+        //             case water: {
+        //                 waterPoint += 30
+        //                 break;
+        //             }
+
+        //         }
+        //         setTimeout(function() {
+        //             candy1.src = blank;
+        //             candy2.src = blank;
+        //             candy3.src = blank;
                   
-                    },400)
+        //             },400)
                 
-            }
-        }
+        //     }
+        // }
     }
 
     //check columns
@@ -1116,10 +1089,11 @@ if (abc == true) {
 }}
 
 
-
 function clickabd() {
+
 if (amc == false ) {
     otherTile = this;
+    otherTile.width = 117
     setTimeout(function(){abc = true},5)
     abd = 0
     amc = true
